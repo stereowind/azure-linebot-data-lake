@@ -32,6 +32,9 @@ Everything in between was being constantly rethought and redesigned, and uses di
     * Sends notification on completion via SendGrid
 7. Users query data directly from User storage on data lake via PowerBI
 
+## Final output example
+![](analysis.png)
+
 # Additional information
 Function script (Python): `function.py`  
 Databricks notebook (PySpark): `stage_to_user_linebot.ipynb`  

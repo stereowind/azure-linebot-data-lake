@@ -42,9 +42,10 @@ def save_json_to_ADLS(event):
     date = datetime.now(tz=pytz.timezone('Japan'))
     blob_name = f"{system_name}/date={date.year}-{date.month:02d}-{date.day:02d}/{date.hour:02d}/{date.minute:02d}/{date.hour:02d}-{date.minute:02d}-{date.second:02d}_{timestamp}_{user_id}.json"
     event_content = json.dumps(event)
-    
+    event_content = event_content.replace('\\n', '')
+
     logging.info(f"Blob name: {blob_name}")
-    logging.info(f"Event body:\n{event_content}")
+    logging.info(f"Event body: {event_content}")
 
     try:
         blob_client = BlockBlobService(account_name=os.getenv("STORAGE_ACCOUNT_NAME"), account_key=os.getenv("STORAGE_ACCOUNT_KEY"))
