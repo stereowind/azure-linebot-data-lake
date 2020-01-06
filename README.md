@@ -51,3 +51,4 @@ Mapping Data Flow:
 * Tune sentiment categories judgement (especially for Japanese language)
 * Re-architecture certain parts of data lake for scalability (store data in parquet format, reimagine data factory trigger etc)
 * Implement thorough logging flow
+* Implement data lifecycle management
