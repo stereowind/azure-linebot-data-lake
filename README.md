@@ -39,7 +39,9 @@ Everything in between was being constantly rethought and redesigned, and uses di
 Function script (Python): `function.py`  
 Databricks notebook (PySpark): `stage_to_user_linebot.ipynb`  
 Data Factory pipeline:  
-![](pipeline.png)
+![](pipeline.png)  
+Mapping Data Flow:
+![](mapping_data_flow.png)
 
 # To-do
 * Secure data lake (use Azure Key Vault, audit role permissions etc)
