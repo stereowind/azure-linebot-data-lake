@@ -48,4 +48,6 @@ Mapping Data Flow:
 * Refactor code to include:
     * Checks for exceptions where necessary
     * Check for text message length when sending message to Text Analytics API
-* Tweak sentiment categories (especially for Japanese language)
+* Tune sentiment categories judgement (especially for Japanese language)
+* Re-architecture certain parts of data lake for scalability (store data in parquet format, reimagine data factory trigger etc)
+* Implement thorough logging flow
