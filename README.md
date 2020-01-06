@@ -17,7 +17,7 @@ Everything in between was being constantly rethought and redesigned, and uses di
 1. User sends a message to LINE bot `AzureDataLakeBot`
 2. Message goes through LINE server to Azure Function app that performs 2 steps:
     1. Stores JSON message information received from LINE server in data lake's Raw zone in JSON format
-    2. Replies back to the user via bot with "Message successfully processed" message
+    2. Replies back to the user via bot with "Message processed" message
 3. Data factory is triggered manually (or set to trigger on time). Data factory pipeline consists of 2 steps: 
     * **Mapping Data Flow** for Raw zone -> Stage zone processing
     * **Azure Databricks notebook** (PySpark) for Stage zone -> User storage processing
